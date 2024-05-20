@@ -1,10 +1,12 @@
 import React, { useState } from "react";
+/* 상태를 useState로 관리 */
 
+/* 결과 값 저장 */
 export default function App() {
   const [result, setResult] = useState(0);
   const [inputValue, setInputValue] = useState("");
 
-  /* state 리렌더링 함수 */
+  /* state로 리렌더링 */
   const handleInputChange = (e) => {
     setInputValue(e.target.value);
   };
